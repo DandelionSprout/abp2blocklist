@@ -34,9 +34,18 @@ generated file by hand.
 
 ## Usage
 
+In Unix command lines, use:
 ```
 node abp2blocklist.js < easylist.txt > easylist.json
 ```
+
+Alternately, the following command can be used in PowerShell, but it results in a larger filesize:
+
+```
+get-content easylist.txt | node abp2blocklist.js > easylist.json
+```
+
+Both possibilities assume that you're trying to convert an input file that'd be called _easylist.txt_, and that you've navigated to the file's correct folder through the _cd_ command. If the input file has a different name, replace _easylist.txt_ with the file's name.
 
 ## Tests
 
