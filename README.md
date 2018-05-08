@@ -34,13 +34,12 @@ generated file by hand.
 
 ## Usage
 
-In Unix command lines, use:
+We recommend the use of [Node.js](https://nodejs.org/en/download/)'s own command prompt, but it should also work in regular Unix command prompts (e.g. Cygwin). In either case the command is:
 ```
 node abp2blocklist.js < easylist.txt > easylist.json
 ```
 
-Alternately, the following command can be used in PowerShell, but it results in a larger filesize:
-
+We don't recommend using PowerShell, since it adds bloated metadata that increases the size of the output file, but if so needed, the following command can be used there:
 ```
 get-content easylist.txt | node abp2blocklist.js > easylist.json
 ```
