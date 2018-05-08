@@ -34,17 +34,12 @@ generated file by hand.
 
 ## Usage
 
-We recommend the use of [Node.js](https://nodejs.org/en/download/)'s own command prompt, but it should also work in regular Unix command prompts (e.g. Cygwin). In either case the command is:
+In a Unix or Node.js command prompt, use:
 ```
 node abp2blocklist.js < easylist.txt > easylist.json
 ```
 
-We don't recommend using PowerShell, since it adds bloated metadata that increases the size of the output file, but if so needed, the following command can be used there:
-```
-get-content easylist.txt | node abp2blocklist.js > easylist.json
-```
-
-Both possibilities assume that you're trying to convert an input file that'd be called _easylist.txt_, and that you've navigated to the file's correct folder through the _cd_ command. If the input file has a different name, replace _easylist.txt_ with the file's name.
+This assumes that you're trying to convert an input file that'd be called _easylist.txt_, and that you've navigated to the file's correct folder through the _cd_ command. If the input file has a different name, replace _easylist.txt_ with the file's name.
 
 ## Tests
 
