@@ -34,12 +34,10 @@ generated file by hand.
 
 ## Usage
 
-In a Unix or Node.js command prompt, use:
+Create a WebKit block list ```output.json``` from the Adblock Plus filter list ```input.txt```:
 ```
-node abp2blocklist.js < easylist.txt > easylist.json
+node abp2blocklist.js < input.txt > output.json
 ```
-
-This assumes that you're trying to convert an input file that'd be called _easylist.txt_, and that you've navigated to the file's correct folder through the _cd_ command. If the input file has a different name, replace _easylist.txt_ with the file's name.
 
 ## Tests
 
